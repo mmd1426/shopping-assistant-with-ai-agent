@@ -1,0 +1,6 @@
+python-dotenv==1.1.1
+langchain_openai==0.3.32
+langchain==0.3.27
+fastapi==0.116.1
+uvicorn==0.35.0
+basalam_sdk
