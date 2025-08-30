@@ -67,7 +67,7 @@ async def get_product_details(query: str = None, **kwargs):
             isFreeShipping = product["isFreeShipping"]
 
             # Format product information in Persian
-            r = f"محصول «{name}» با قیمت {price} تومان عرضه می‌شود. این کالا با امتیاز {rating} از کاربران، {'موجود است' if IsAvailable else 'در حال حاضر موجود نیست'} و {'دارای ارسال رایگان می‌باشد' if isFreeShipping else 'ارسال رایگان ندارد'}. ویژگی‌های اصلی آن شامل {mainAttribute} است."
+            r = f"محصول «{name}» با قیمت {price} تومان عرضه می‌شود. این کالا با امتیاز {rating} از کاربران، {'موجود است' if IsAvailable else 'در حال حاضر موجود نیست'} و {'دارای ارسال رایگان می‌باشد' if isFreeShipping else 'ارسال رایگان ندارد'}."
 
             product_details.append(r)
         except AttributeError as e:
